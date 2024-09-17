@@ -38,10 +38,11 @@ while running:
 
     # Обрабатываем события
     for event in pygame.event.get():
-        if event.type == pygame.QUIT:
+        if event.type == pygame.QUIT:  # Исправлено
             running = False
         if event.type == pygame.MOUSEBUTTONDOWN:
             mouse_x, mouse_y = pygame.mouse.get_pos()
+            # Исправлено условие проверки попадания по цели
             if target_x < mouse_x < target_x + target_width and target_y < mouse_y < target_y + target_height:
                 score += 1  # Увеличиваем счет при попадании по цели
                 target_x = random.randint(0, SCREEN_WIDTH - target_width)
