@@ -21,8 +21,8 @@ cursor_img = pygame.image.load("img/cursor.png")  # Добавляем изоб�
 # Инициализация переменных для цели
 target_x = random.randint(0, SCREEN_WIDTH - target_width)
 target_y = random.randint(0, SCREEN_HEIGHT - target_height)
-target_speed_x = random.choice([-3, 3])  # Скорость по x
-target_speed_y = random.choice([-3, 3])  # Скорость по y
+target_speed_x = random.choice([-1, 1])  # Скорость по x
+target_speed_y = random.choice([-1, 1])  # Скорость по y
 
 # Цвет фона
 color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
